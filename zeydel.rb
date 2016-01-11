@@ -32,9 +32,7 @@ while Array.new(n){|i| (x[i] - last[i]).abs}.rate >= e
 	last = Array.new(x)
 	for i in (0...n)
 		x[i] = -(sum(n){|j| a[i][j] * x[j]} - a[i][i] * x[i] - b[i]) / a[i][i]
-	end
-	# p x
-	p Array.new(n){|i| (x[i] - last[i]).abs}
+	end                                     
 end
 p x
 
